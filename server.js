@@ -8,7 +8,7 @@ app.use(express.json());
 
 // 🔥 CONFIGURE COM OS DADOS DO EASYPANEL
 const pool = new Pool({
-  host: "SEU_HOST",
+  host: process.env.DB_HOST,
   user: "SEU_USER",
   password: "SUA_SENHA",
   database: "SEU_DB",
